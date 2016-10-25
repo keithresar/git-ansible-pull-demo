@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  remote_user: root
+
+
+  tasks:
+  - name: Install and enable Mariadb
+    service: name=mariadb-server enabled=yes state=started
+
